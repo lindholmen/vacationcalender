@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const LeftPanel = ({ addVacation }) => {
   const teamMembers = [
     { name: "Dawid", color: "black" },
-    { name: "Yemao", color: "purple" },
-    { name: "Petra", color: "blue" },
     { name: "Emmanuel", color: "green" },
-    { name: "Yanqing", color: "orange" },
-    { name: "Mowei", color: "pink" },
     { name: "Hugo", color: "#FFD700" },
+    { name: "Mowei", color: "pink" },
+    { name: "Petra", color: "blue" },
     { name: "Shreeya", color: "gray" },
-  ];
+    { name: "Yanqing", color: "orange" },
+    { name: "Yemao", color: "purple" },
+  ].sort((a, b) => a.name.localeCompare(b.name));
 
   const [vacation, setVacation] = useState({
     name: "",
